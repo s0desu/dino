@@ -16,9 +16,13 @@
                                                                      
 * {
   overflow: hidden;
-  filter:xray() ;
 }                                                                  
-    
+
+@media (prefers-color-scheme: dark) {
+  html{
+      filter: invert(1) hue-rotate(180deg);
+}                            
+                             
 a {
   color: #585858;
 }
